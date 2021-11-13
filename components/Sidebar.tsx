@@ -45,6 +45,7 @@ const Sidebar = () => {
       <div className='flex justify-around w-9/12 mx-auto my-5 text-crayola md:w-full '>
         <a
           href='https://www.linkedin.com/in/flaviuhossu/'
+          aria-label='LinkedIn'
           target='_blank'
           rel='noreferrer'
           className='hover:text-sun'
@@ -53,6 +54,7 @@ const Sidebar = () => {
         </a>
         <a
           href='https://github.com/flaviuhossu'
+          aria-label='Github'
           target='_blank'
           rel='noreferrer'
           className='hover:text-sun'

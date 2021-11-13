@@ -4,6 +4,8 @@ import { services } from '../data/data'
 import { motion } from 'framer-motion'
 import { fadeInUP, routeAnimation, stagger } from '../animation'
 
+import Head from 'next/head'
+
 const index = () => {
   return (
     <motion.div
@@ -13,6 +15,9 @@ const index = () => {
       animate='animate'
       exit='exit'
     >
+      <Head>
+        <title>Flaviu Hossu | Portfolio | Web Dev</title>
+      </Head>
       <h5 className='mt-3 font-medium'>
         I tend to adopt a holistic approach in all activities that I undertake
         and try to get the most out of them. Both technical knowledge and

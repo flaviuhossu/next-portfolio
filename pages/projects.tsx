@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { Category } from '../type'
 import { motion } from 'framer-motion'
 import { fadeInUP, routeAnimation, stagger } from '../animation'
+import Head from 'next/head'
 
 const Projects = () => {
   const [showDetail, setShowDetail] = useState<number | null>(null)
@@ -34,6 +35,9 @@ const Projects = () => {
       initial='initial'
       exit='exit'
     >
+      <Head>
+        <title>Flaviu Hossu | Projects | Web Dev</title>
+      </Head>
       <ProjectsNavbar
         handleFilterCategory={handleFilterCategory}
         active={active}

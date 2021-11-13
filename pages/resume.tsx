@@ -3,6 +3,8 @@ import { languages, tools } from '../data/data'
 import { motion } from 'framer-motion'
 import { fadeInUP, routeAnimation } from '../animation'
 
+import Head from 'next/head'
+
 const resume = () => {
   return (
     <motion.div
@@ -12,6 +14,9 @@ const resume = () => {
       initial='initial'
       exit='exit'
     >
+      <Head>
+        <title>Flaviu Hossu | Resume | Web Dev</title>
+      </Head>
       {/* Education and Experience */}
 
       <div className='grid md:grid-cols-2'>
